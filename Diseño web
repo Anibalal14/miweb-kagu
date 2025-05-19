@@ -4,56 +4,41 @@ index.html
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kagu | Tu mentor digital</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Kagu - Mentor Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffedd5, #ffe4e1);
+      color: #2e2e2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      color: #b91c1c;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      max-width: 600px;
+      font-size: 1.2rem;
+    }
+    img {
+      max-width: 200px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Kagu</h1>
-    <p>Tu mentor digital inspirado en el fuego interior.</p>
-  </header>
-
-  <section class="bio">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kagu-tsuchi.svg/800px-Kagu-tsuchi.svg.png" alt="Kagu, dios del fuego" />
-    <div>
-      <h2>¿Quién es Kagu?</h2>
-      <p>
-        Kagu está inspirado en Kagutsuchi, el dios japonés del fuego. Representa la transformación, la energía que impulsa el cambio y el poder de las ideas que encienden el alma.
-        Este mentor digital nace para ayudarte a tomar decisiones, reflexionar y crecer desde tu fuego interior.
-      </p>
-    </div>
-  </section>
-
-  <section class="interaccion">
-    <h2>Habla con Kagu</h2>
-    <p>Plantea una duda o comparte una idea. Kagu te guiará.</p>
-    <textarea id="userInput" placeholder="Escribe aquí..."></textarea>
-    <button onclick="enviarConsulta()">Enviar</button>
-    <div id="respuesta"></div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Kagu · Proyecto de mentoría digital</p>
-  </footer>
-
-  <script>
-    async function enviarConsulta() {
-      const userInput = document.getElementById('userInput').value;
-      const respuestaDiv = document.getElementById('respuesta');
-      respuestaDiv.innerHTML = "Pensando... 🔥";
-
-      try {
-        const res = await fetch('/api/kagu', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ prompt: userInput }),
-        });
-        const data = await res.json();
-        respuestaDiv.innerHTML = `<strong>Kagu:</strong> ${data.respuesta}`;
-      } catch (error) {
-        respuestaDiv.innerHTML = "Hubo un problema al conectar con Kagu.";
-      }
-    }
-  </script>
+  <h1>Kagu 🔥</h1>
+  <p>
+    Bienvenido a <strong>Kagu</strong>, tu mentor digital inspirado en el fuego interior y la sabiduría mitológica japonesa. 
+    Kagu está diseñado para ayudarte a reflexionar, tomar mejores decisiones y desarrollar tu verdadero potencial.
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Homura_God_of_Fire.svg/800px-Homura_God_of_Fire.svg.png" alt="Kagu, deidad del fuego japonés">
 </body>
 </html>
