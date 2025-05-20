@@ -111,3 +111,33 @@ section p {
   font-size: 1.1rem;
   color: #444;
 }
+.hero {
+  background: linear-gradient(135deg, #ffecd5, #ffe4e1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #b91c1c;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  max-width: 180px;
+  filter: drop-shadow(0 0 10px rgba(255, 100, 0, 0.3));
+}
