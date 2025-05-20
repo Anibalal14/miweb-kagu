@@ -1,94 +1,32 @@
-:root {
-  --color-fuego: #e25822;
-  --color-fuego-suave: #ffbb99;
-  --color-fondo: #fff5f0;
-  --color-texto: #2e2e2e;
-  --color-acento: #aa3e2e;
-}
-
+/* Estilos generales del cuerpo */
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
-  line-height: 1.6;
-}
-
-header {
-  background: linear-gradient(to right, var(--color-fuego), var(--color-fuego-suave));
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 3rem;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
-
-.bio {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffded5, #ffe4c1);
+  color: #2e2e2e;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-.bio img {
-  max-width: 200px;
-  border-radius: 16px;
-}
-
-.bio div {
-  flex: 1;
-}
-
-.interaccion {
-  background-color: #fffaf7;
-  padding: 2rem;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
 }
 
-textarea {
-  width: 100%;
+/* Título principal */
+h1 {
+  color: #b91c1c;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Párrafos */
+p {
   max-width: 600px;
-  height: 100px;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
-button {
-  background-color: var(--color-acento);
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: #822d1f;
-}
-
-#respuesta {
-  margin-top: 1rem;
-  font-style: italic;
-}
-
-footer {
-  background-color: var(--color-fuego-suave);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+/* Imagen */
+img {
+  max-width: 200px;
+  margin-top: 20px;
 }
