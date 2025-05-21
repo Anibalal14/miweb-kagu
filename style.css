@@ -129,15 +129,45 @@ section p {
   color: #444;
 }
 .hero {
-  background: linear-gradient(135deg, #ffecd5, #ffe4e1);
+  padding: 150px 20px 100px 20px; 
+  background: linear-gradient(135deg, #2b0f0f, #ff4500);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  color: white; 
+}
+cta-buttons {
+  margin-top: 30px;
 }
 
+.btn {
+  background-color: #ff6b00;
+  color: white;
+  padding: 12px 25px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff8533;
+}
+
+.btn-alt {
+  background-color: transparent;
+  border: 2px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.btn-alt:hover {
+  background-color: #ff6b00;
+  color: white;
+}
 .hero-content {
   max-width: 800px;
 }
